@@ -36,3 +36,137 @@
   color: #ffffff;
   margin-left: 1rem;
 }
+
+/* Large screens ----------- */
+@media only screen and (max-width: 1275px) {
+  .navList {
+    padding: 2.5rem 0 0 0;
+  }
+
+  .navLink {
+    font-size: 1em;
+  }
+
+  .logoImg {
+    transform: scale(0.8);
+    margin-top: -2rem;
+  }
+
+  .talkBtn {
+    padding: 0.5rem 1rem;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .navList {
+    padding: 2.5rem 0 0 0;
+  }
+
+  .navLink {
+    font-size: 1em;
+  }
+
+  .logoImg {
+    transform: scale(0.8);
+    margin-top: -2rem;
+  }
+
+  .talkBtn {
+    padding: 0.5rem 1rem;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .navList {
+    padding: 2.5rem 0 0 0;
+  }
+
+  .navLink {
+    margin: 0 1rem;
+    font-size: 1em;
+  }
+
+  .logoImg {
+    display: none;
+  }
+
+  .talkBtn {
+    font-size: 0.8em;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .navList {
+    padding: 2.5rem 0 0 0;
+  }
+
+  .navLink {
+    margin: 0 1rem;
+    font-size: 1.2em;
+  }
+
+  .logoImg {
+    display: none;
+  }
+
+  .talkBtn {
+    font-size: 1em;
+  }
+}
+
+@media only screen and (max-width: 580px) {
+  .navList {
+    padding: 2.5rem 0 0 0;
+  }
+
+  .navLink {
+    margin: 0 0.5rem;
+    font-size: 0.8em;
+  }
+
+  .logoImg {
+    display: none;
+  }
+
+  .talkBtn {
+    font-size: 1em;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .navList {
+    padding: 2rem 0 0 0;
+  }
+
+  .navLink {
+    margin: 0 0.3rem;
+    font-size: 0.8em;
+  }
+
+  .logoImg {
+    display: none;
+  }
+
+  .talkBtn {
+    font-size: 0.8em;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .navList {
+    padding: 2rem 0 0 0;
+  }
+
+  .navLink {
+    margin: 0 0.3rem;
+    font-size: 0.8em;
+  }
+
+  .logoImg {
+    display: none;
+  }
+
+  .talkBtn {
+    display: none;
+  }
+}

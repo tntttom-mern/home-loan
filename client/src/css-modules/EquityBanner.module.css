@@ -1,0 +1,132 @@
+.container {
+  margin-top: 5rem;
+  width: 100%;
+  background-image: url("../images/EQYUTI_BANNER.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 53vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.subHeader {
+  font-size: 3em;
+  text-transform: uppercase;
+}
+
+.header {
+  font-weight: bold;
+  font-size: 4em;
+  text-transform: uppercase;
+}
+
+.btn {
+  font-size: 1.4em;
+  border: none;
+  outline: none;
+  margin-top: 1.5rem;
+  padding: 0.8rem 3.2rem;
+  background-color: transparent;
+  border: 1px solid white;
+  color: #fff;
+  transition: 0.2s;
+}
+
+.btn:hover {
+  color: #007bc0;
+  background-color: #fff;
+  border: 1px solid #fff;
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (max-width: 1024px) {
+  .subHeader {
+    font-size: 2em;
+    text-transform: uppercase;
+  }
+
+  .header {
+    font-size: 3em;
+  }
+
+  .btn {
+    font-size: 1.2em;
+    padding: 0.5rem 2rem;
+  }
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (max-width: 768px) {
+  .subHeader {
+    font-size: 2em;
+    text-transform: uppercase;
+  }
+
+  .header {
+    font-size: 3em;
+  }
+
+  .btn {
+    font-size: 1.2em;
+    padding: 0.5rem 2rem;
+  }
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (max-width: 580px) {
+  .subHeader {
+    font-size: 1.5em;
+    text-transform: uppercase;
+  }
+
+  .header {
+    font-size: 2.5em;
+  }
+
+  .btn {
+    font-size: 1.2em;
+    padding: 0.5rem 2rem;
+  }
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (max-width: 500px) {
+  .subHeader {
+    font-size: 1.3em;
+    text-transform: uppercase;
+  }
+
+  .header {
+    font-size: 2.5em;
+  }
+
+  .btn {
+    font-size: 1.2em;
+    padding: 0.5rem 2rem;
+  }
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (max-width: 378px) {
+  .subHeader {
+    text-align: center;
+    padding: 0 1rem;
+    font-size: 1.2em;
+    text-transform: uppercase;
+  }
+
+  .header {
+    text-align: center;
+    padding: 1rem;
+    font-size: 2.3em;
+  }
+
+  .btn {
+    font-size: 1.2em;
+    padding: 0.5rem 2rem;
+  }
+}

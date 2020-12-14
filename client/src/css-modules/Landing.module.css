@@ -1,6 +1,9 @@
 .heroContainer {
   width: 100%;
   background-image: url("../images/HomeBanner1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
   height: 60vh;
 }
 
@@ -46,4 +49,161 @@
   color: #007bc0;
   background-color: #fff;
   border: 1px solid #fff;
+}
+
+/* Large screens ----------- */
+@media only screen and (max-width: 1824px) {
+  .heroHeader {
+    font-size: 3.5em;
+  }
+  .heroText {
+    font-size: 1.6em;
+  }
+
+  .btn {
+    font-size: 1.6em;
+    padding: 0.6rem 2.5rem;
+  }
+}
+
+/* Large screens ----------- */
+@media only screen and (max-width: 1275px) {
+  .heroHeader {
+    font-size: 3em;
+  }
+  .heroText {
+    font-size: 1.2em;
+  }
+
+  .btn {
+    font-size: 1.3em;
+    padding: 0.4rem 2rem;
+  }
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (max-width: 1024px) {
+  .heroHeader {
+    font-size: 2.5em;
+  }
+  .heroText {
+    font-size: 1.2em;
+  }
+
+  .btn {
+    font-size: 1.2em;
+    padding: 0.3rem 1rem;
+  }
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (max-width: 992px) {
+  .heroTextContainer {
+    height: 100%;
+    display: flex;
+    width: 85%;
+  }
+
+  .heroHeader {
+    font-size: 2.5em;
+    width: 50%;
+  }
+  .heroText {
+    font-size: 1.2em;
+    width: 50%;
+  }
+
+  .buttonContainer {
+    width: 50%;
+    margin-top: 0.5rem;
+  }
+
+  .btn {
+    font-size: 1.4em;
+    padding: 0.5rem 1.2rem;
+  }
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (max-width: 768px) {
+  .heroHeader {
+    font-size: 2.5em;
+  }
+  .heroText {
+    font-size: 1.2em;
+  }
+
+  .btn {
+    font-size: 1.2em;
+    padding: 0.5rem 1.2rem;
+  }
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (max-width: 580px) {
+  .heroHeader {
+    font-size: 2em;
+  }
+  .heroText {
+    font-size: 1em;
+  }
+
+  .buttonContainer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .btn {
+    margin: 0.2rem 0;
+    font-size: 1.2em;
+    width: 50%;
+  }
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (max-width: 500px) {
+  .heroHeader {
+    font-size: 2em;
+    width: 60%;
+  }
+  .heroText {
+    font-size: 1.2em;
+    width: 60%;
+  }
+
+  .buttonContainer {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .btn {
+    margin: 0.2rem 0;
+    font-size: 1.2em;
+    width: 50%;
+  }
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (max-width: 380px) {
+  .heroHeader {
+    font-size: 2em;
+    width: 80%;
+  }
+  .heroText {
+    font-size: 1.2em;
+    width: 80%;
+  }
+
+  .buttonContainer {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .btn {
+    margin: 0.2rem 0;
+    font-size: 1.2em;
+    width: 50%;
+  }
 }

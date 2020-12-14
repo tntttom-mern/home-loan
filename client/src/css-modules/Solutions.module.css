@@ -85,3 +85,267 @@
   background-color: #fff;
   border: 1px solid #fff;
 }
+
+@media only screen and (max-width: 1275px) {
+  .solutionsContainer {
+    width: 60%;
+  }
+
+  .solutionTwo {
+    margin-top: 3rem;
+  }
+
+  .solutionOneImg {
+    width: 40%;
+  }
+
+  .solutionTwoImg {
+    width: 35%;
+  }
+
+  .solutionText {
+    width: 35%;
+  }
+  .solutionTwoText {
+    width: 35%;
+    margin-right: 4rem;
+  }
+  .solutionOneList {
+    padding: 0;
+  }
+
+  .solutionHeader {
+    font-size: 1.6em;
+  }
+
+  .btn {
+    font-size: 1.2em;
+    margin-top: 0.5rem;
+    padding: 0.3rem 1.3rem;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .solutionsContainer {
+    width: 80%;
+  }
+
+  .solutionTwo {
+    margin-top: 3rem;
+  }
+
+  .solutionOneImg {
+    width: 40%;
+  }
+
+  .solutionTwoImg {
+    width: 40%;
+  }
+
+  .solutionText {
+    width: 35%;
+  }
+  .solutionTwoText {
+    width: 40%;
+    margin-right: 4rem;
+  }
+  .solutionOneList {
+    padding: 0;
+  }
+
+  .solutionHeader {
+    font-size: 1.6em;
+  }
+
+  .btn {
+    font-size: 1.2em;
+    margin-top: 0.5rem;
+    padding: 0.3rem 1.3rem;
+  }
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (max-width: 992px) {
+  .solutionsContainer {
+    width: 100%;
+  }
+
+  .solutionTwoText {
+    width: 40%;
+    margin-right: 0;
+  }
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (max-width: 768px) {
+  .container {
+    margin-top: 2rem;
+  }
+  .solutionsContainer {
+    width: 90%;
+    margin-top: 1rem;
+  }
+
+  .solutionTwoText {
+    width: 40%;
+    margin-right: 2rem;
+  }
+  .solutionOne {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .solutionTwo {
+    text-align: center;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .solutionOneImg {
+    width: 60%;
+    margin-bottom: 1rem;
+    margin-right: 0;
+  }
+
+  .solutionTwoImg {
+    width: 60%;
+    margin-bottom: 1rem;
+  }
+
+  .solutionText {
+    font-size: 1.3em;
+    width: 60%;
+  }
+  .solutionTwoText {
+    font-size: 1.3em;
+    width: 60%;
+    margin: 0;
+  }
+
+  .btn {
+    font-size: 1.3em;
+    margin-top: 0.5rem;
+    padding: 0.5rem 1.3rem;
+  }
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (max-width: 580px) {
+  .container {
+    margin-top: 2rem;
+  }
+  .solutionsContainer {
+    width: 90%;
+    margin-top: 1rem;
+  }
+
+  .solutionTwoText {
+    width: 40%;
+    margin-right: 2rem;
+  }
+  .solutionOne {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .solutionTwo {
+    text-align: center;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .solutionOneImg {
+    width: 60%;
+    margin-bottom: 1rem;
+    margin-right: 0;
+  }
+
+  .solutionTwoImg {
+    width: 60%;
+    margin-bottom: 1rem;
+  }
+
+  .solutionText {
+    font-size: 1.3em;
+    width: 60%;
+  }
+  .solutionTwoText {
+    font-size: 1.3em;
+    width: 60%;
+    margin: 0;
+  }
+
+  .btn {
+    font-size: 1.3em;
+    margin-top: 0.5rem;
+    padding: 0.5rem 1.3rem;
+  }
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (max-width: 380px) {
+  .container {
+    margin-top: 2rem;
+  }
+  .solutionsContainer {
+    width: 90%;
+    margin-top: 1rem;
+  }
+
+  .solutionTwoText {
+    width: 40%;
+    margin-right: 2rem;
+  }
+  .solutionOne {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .solutionTwo {
+    text-align: center;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .solutionOneImg {
+    width: 60%;
+    margin-bottom: 1rem;
+    margin-right: 0;
+  }
+
+  .solutionTwoImg {
+    width: 60%;
+    margin-bottom: 1rem;
+  }
+
+  .solutionText {
+    font-size: 1em;
+    width: 60%;
+  }
+  .solutionTwoText {
+    font-size: 1em;
+    width: 60%;
+    margin: 0;
+  }
+
+  .btn {
+    font-size: 1.3em;
+    margin-top: 0.5rem;
+    padding: 0.5rem 1.3rem;
+  }
+}

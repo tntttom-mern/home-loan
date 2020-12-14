@@ -1,0 +1,41 @@
+.container {
+  margin-top: 5rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 10rem;
+}
+
+.textContainer {
+  width: 40%;
+}
+
+.socialImgs {
+  margin-left: -3rem;
+}
+
+.textContainer p {
+  font-size: 1.2em;
+  margin: 0.5rem 0;
+}
+
+.logos {
+  margin-top: 2rem;
+  width: 30%;
+}
+
+@media only screen and (max-width: 1024px) {
+  .textContainer {
+    width: 45%;
+  }
+
+  .socialImgs {
+    margin-left: -3rem;
+    transform: scale(0.9);
+  }
+
+  .logos {
+    width: 40%;
+  }
+}
