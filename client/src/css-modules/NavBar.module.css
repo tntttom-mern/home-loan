@@ -1,0 +1,38 @@
+.navList {
+  padding: 3.5rem 0 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logoImg {
+  transform: scale(0.9);
+  margin-top: -2rem;
+}
+
+.navLink {
+  margin: 0 1rem;
+  font-size: 1.5em;
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+
+  transition: 0.2s;
+}
+
+.navLink:hover {
+  color: #223f7b;
+}
+
+.talkBtn {
+  outline: none;
+  border: none;
+  display: inline-block;
+  padding: 0.8rem 1.2rem;
+  background-color: #223f7b;
+  font-family: Arial;
+  font-size: 14px;
+  font-weight: bold;
+  color: #ffffff;
+  margin-left: 1rem;
+}

@@ -1,0 +1,87 @@
+.container {
+  margin-top: 4rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.solutionLabel {
+  font-size: 3em;
+  font-weight: bold;
+  color: #007bc0;
+}
+
+.solutionsContainer {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.solutionOne {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.solutionTwo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+}
+
+.solutionOneImg {
+  width: 40%;
+  margin-right: 2rem;
+}
+
+.solutionTwoImg {
+  width: 35%;
+}
+
+.solutionText {
+  width: 35%;
+}
+.solutionTwoText {
+  width: 35%;
+  margin-right: 6rem;
+}
+
+.solutionHeader {
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.solutionOneList {
+  list-style-position: inside;
+}
+
+.listItem {
+  font-size: 1.2em;
+}
+
+.solutionTwoDescription {
+  font-size: 1.2em;
+}
+
+.btn {
+  font-size: 1.4em;
+  border: none;
+  outline: none;
+  margin-top: 1rem;
+  padding: 0.5rem 2rem;
+  background-color: #007bc0;
+  border: 1px solid transparent;
+  color: #fff;
+  transition: 0.2s;
+}
+
+.btn:hover {
+  color: #007bc0;
+  background-color: #fff;
+  border: 1px solid #fff;
+}
