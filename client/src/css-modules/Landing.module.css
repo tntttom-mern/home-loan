@@ -14,22 +14,23 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-left: 2rem;
 }
 
 .heroHeader {
-  width: 45%;
-  font-size: 5em;
+  width: 35%;
+  font-size: 4em;
   font-weight: bold;
 }
 
 .heroText {
-  font-size: 1.5em;
-  width: 45%;
+  font-size: 1.35em;
+  width: 35%;
   font-weight: bold;
 }
 
 .buttonContainer {
-  width: 45%;
+  width: 35%;
   margin-top: 1rem;
 }
 
@@ -85,9 +86,15 @@
 @media only screen and (max-width: 1024px) {
   .heroHeader {
     font-size: 2.5em;
+    width: 50%;
   }
   .heroText {
     font-size: 1.2em;
+    width: 50%;
+  }
+
+  .buttonContainer {
+    width: 50%;
   }
 
   .btn {

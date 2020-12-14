@@ -58,6 +58,7 @@
 
 .solutionOneList {
   list-style-position: inside;
+  padding: 0;
 }
 
 .listItem {
@@ -146,8 +147,8 @@
     width: 35%;
   }
   .solutionTwoText {
-    width: 40%;
-    margin-right: 4rem;
+    width: 35%;
+    margin-right: 2rem;
   }
   .solutionOneList {
     padding: 0;

@@ -35,6 +35,16 @@
   font-weight: bold;
   color: #ffffff;
   margin-left: 1rem;
+  border: 1px solid transparent;
+  transition: 0.2s;
+}
+
+.talkBtn:hover {
+  outline: none;
+  transform: scale(1.1);
+  color: #223f7b;
+  border: 1px solid #223f7b;
+  background-color: #fff;
 }
 
 /* Large screens ----------- */
