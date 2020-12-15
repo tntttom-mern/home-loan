@@ -5,6 +5,8 @@ import UserForm from "../components/UserForm";
 import { navigate } from "@reach/router";
 import axios from "axios";
 
+import styles from "../css-modules/Refinance.module.css";
+
 export default () => {
   const [propertyUse, setPropertyUse] = useState("");
   const [homeDescription, setHomeDescription] = useState("");
@@ -32,13 +34,15 @@ export default () => {
   return (
     <div>
       <HomeBanner />
-      <HomeForm
-        setPropertyUse={setPropertyUse}
-        setHomeDescription={setHomeDescription}
-        setTimeframe={setTimeframe}
-        setFirstTimeOwner={setFirstTimeOwner}
-      />
-      <UserForm submitLoan={submitHomePurchase} />
+      <div className={styles.forms}>
+        <HomeForm
+          setPropertyUse={setPropertyUse}
+          setHomeDescription={setHomeDescription}
+          setTimeframe={setTimeframe}
+          setFirstTimeOwner={setFirstTimeOwner}
+        />
+        <UserForm submitLoan={submitHomePurchase} />
+      </div>
     </div>
   );
 };

@@ -6,6 +6,8 @@ import RefinanceBanner from "../components/RefinanceBanner";
 import RefinanceForm from "../components/RefinanceForm";
 import UserForm from "../components/UserForm";
 
+import styles from "../css-modules/Refinance.module.css";
+
 export default () => {
   const [propertyUse, setPropertyUse] = useState("");
   const [homeDescription, setHomeDescription] = useState("");
@@ -25,13 +27,15 @@ export default () => {
       .catch((err) => console.log(err));
   };
   return (
-    <div>
+    <div className={styles.container}>
       <RefinanceBanner />
-      <RefinanceForm
-        setPropertyUse={setPropertyUse}
-        setHomeDescription={setHomeDescription}
-      />
-      <UserForm submitLoan={submitRefinance} />
+      <div className={styles.forms}>
+        <RefinanceForm
+          setPropertyUse={setPropertyUse}
+          setHomeDescription={setHomeDescription}
+        />
+        <UserForm submitLoan={submitRefinance} />
+      </div>
     </div>
   );
 };
