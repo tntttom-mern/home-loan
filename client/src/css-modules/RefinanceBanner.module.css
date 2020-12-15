@@ -1,0 +1,17 @@
+.container {
+  width: 100%;
+  background-image: url("../images/banne3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  font-size: 5em;
+  font-weight: bold;
+  color: white;
+}

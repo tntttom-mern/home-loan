@@ -1,0 +1,65 @@
+.formContainer {
+  width: 50%;
+  margin: 2rem auto;
+  border-bottom: 1px solid gray;
+  padding-bottom: 2rem;
+}
+
+.formHeader {
+  font-size: 3.5em;
+  padding-bottom: 1rem;
+}
+
+.inputList {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.inputGroup {
+  width: 45%;
+  margin-right: 5%;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.inputLabel {
+  font-size: 1.15em;
+  font-weight: bold;
+}
+
+.inputBox {
+  font-size: 1.4em;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid gray;
+}
+
+.checkContainer {
+  margin: 1rem 0;
+  display: flex;
+  width: 80%;
+}
+
+.checkText {
+  font-size: 1.2em;
+  margin-left: 1rem;
+}
+
+.btn {
+  font-size: 1.4em;
+  border: none;
+  outline: none;
+  margin-top: 1rem;
+  padding: 0.5rem 2.5rem;
+  background-color: #007bc0;
+  border: 1px solid transparent;
+  color: #fff;
+  transition: 0.2s;
+}
+
+.btn:hover {
+  color: #007bc0;
+  background-color: #fff;
+  border: 1px solid #007bc0;
+}

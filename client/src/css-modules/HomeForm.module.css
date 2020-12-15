@@ -1,0 +1,60 @@
+.formContainer {
+  width: 50%;
+  margin: 2rem auto;
+  border-bottom: 1px solid gray;
+}
+
+.formHeader {
+  font-size: 3.5em;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid gray;
+}
+
+.inputGroup {
+  margin: 2rem 0;
+}
+
+.groupLabel {
+  font-size: 2em;
+}
+
+.radioGroup {
+  width: 100%;
+}
+
+.radioItem {
+  font-size: 1.3em;
+  width: 25%;
+}
+
+.radio {
+  margin-right: 1rem;
+}
+
+input[type="radio"]:after {
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+
+  left: -1px;
+  position: relative;
+  background-color: #d1d3d1;
+  content: "";
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid white;
+}
+
+input[type="radio"]:checked:after {
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+
+  left: -1px;
+  position: relative;
+  background-color: #007bc0;
+  content: "";
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid white;
+}
