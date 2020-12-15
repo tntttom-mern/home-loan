@@ -15,6 +15,7 @@ export default (props) => {
   const [city, setCity] = useState("");
   const [state, setState] = useState("");
   const [zipcode, setZipcode] = useState("");
+  const [errors, setErrors] = useState({});
 
   const submitForm = (event) => {
     event.preventDefault();
@@ -35,9 +36,13 @@ export default (props) => {
         },
       })
       .then((res) => {
-        console.log(res.data.user._id);
-
-        props.submitLoan(`${res.data.user._id}`);
+        if (res.data.errors) {
+          setErrors(res.data.errors);
+          console.log(errors);
+        } else {
+          props.submitLoan(`${res.data.user._id}`);
+        }
+        console.log(res.data);
       })
 
       .catch((err) => console.log(err));
@@ -48,7 +53,15 @@ export default (props) => {
       <h1 className={styles.formHeader}>User Profile</h1>
       <div className={styles.inputList}>
         <div className={styles.inputGroup}>
-          <label className={styles.inputLabel}>First Name</label>
+          <label className={styles.inputLabel}>
+            First Name{" "}
+            <span className={styles.required}>
+              *{" "}
+              {errors.firstName ? (
+                <span className={styles.error}>{errors.firstName.message}</span>
+              ) : null}
+            </span>
+          </label>
           <input
             className={styles.inputBox}
             type="text"
@@ -57,7 +70,15 @@ export default (props) => {
         </div>
 
         <div className={styles.inputGroup}>
-          <label className={styles.inputLabel}>Last Name</label>
+          <label className={styles.inputLabel}>
+            Last Name{" "}
+            <span className={styles.required}>
+              *{" "}
+              {errors.lastName ? (
+                <span className={styles.error}>{errors.lastName.message}</span>
+              ) : null}
+            </span>
+          </label>
           <input
             className={styles.inputBox}
             type="text"
@@ -66,7 +87,15 @@ export default (props) => {
         </div>
 
         <div className={styles.inputGroup}>
-          <label className={styles.inputLabel}>Email Address</label>
+          <label className={styles.inputLabel}>
+            Email Address{" "}
+            <span className={styles.required}>
+              *{" "}
+              {errors.email ? (
+                <span className={styles.error}>{errors.email.message}</span>
+              ) : null}
+            </span>
+          </label>
           <input
             className={styles.inputBox}
             type="text"
@@ -75,7 +104,15 @@ export default (props) => {
         </div>
 
         <div className={styles.inputGroup}>
-          <label className={styles.inputLabel}>Password</label>
+          <label className={styles.inputLabel}>
+            Password{" "}
+            <span className={styles.required}>
+              *{" "}
+              {errors.password ? (
+                <span className={styles.error}>{errors.password.message}</span>
+              ) : null}
+            </span>
+          </label>
           <input
             className={styles.inputBox}
             type="password"
@@ -84,7 +121,15 @@ export default (props) => {
         </div>
 
         <div className={styles.inputGroup}>
-          <label className={styles.inputLabel}>Primary Phone</label>
+          <label className={styles.inputLabel}>
+            Primary Phone{" "}
+            <span className={styles.required}>
+              *{" "}
+              {errors.phone ? (
+                <span className={styles.error}>{errors.phone.message}</span>
+              ) : null}
+            </span>
+          </label>
           <input
             className={styles.inputBox}
             type="text"
@@ -93,7 +138,17 @@ export default (props) => {
         </div>
 
         <div className={styles.inputGroup}>
-          <label className={styles.inputLabel}>Date of Birth</label>
+          <label className={styles.inputLabel}>
+            Date of Birth{" "}
+            <span className={styles.required}>
+              *{" "}
+              {errors.dateOfBirth ? (
+                <span className={styles.error}>
+                  {errors.dateOfBirth.message}
+                </span>
+              ) : null}
+            </span>
+          </label>
           <input
             className={styles.inputBox}
             type="text"
@@ -102,7 +157,17 @@ export default (props) => {
         </div>
 
         <div className={styles.inputGroup}>
-          <label className={styles.inputLabel}>Street Address</label>
+          <label className={styles.inputLabel}>
+            Street Address{" "}
+            <span className={styles.required}>
+              *{" "}
+              {errors["address.street"] ? (
+                <span className={styles.error}>
+                  {errors["address.street"].message}
+                </span>
+              ) : null}
+            </span>
+          </label>{" "}
           <input
             className={styles.inputBox}
             type="text"
@@ -111,7 +176,17 @@ export default (props) => {
         </div>
 
         <div className={styles.inputGroup}>
-          <label className={styles.inputLabel}>City</label>
+          <label className={styles.inputLabel}>
+            City{" "}
+            <span className={styles.required}>
+              *{" "}
+              {errors["address.city"] ? (
+                <span className={styles.error}>
+                  {errors["address.city"].message}
+                </span>
+              ) : null}
+            </span>
+          </label>{" "}
           <input
             className={styles.inputBox}
             type="text"
@@ -120,7 +195,17 @@ export default (props) => {
         </div>
 
         <div className={styles.inputGroup}>
-          <label className={styles.inputLabel}>State</label>
+          <label className={styles.inputLabel}>
+            State{" "}
+            <span className={styles.required}>
+              *{" "}
+              {errors["address.state"] ? (
+                <span className={styles.error}>
+                  {errors["address.state"].message}
+                </span>
+              ) : null}
+            </span>
+          </label>
           <input
             className={styles.inputBox}
             type="text"
@@ -129,7 +214,18 @@ export default (props) => {
         </div>
 
         <div className={styles.inputGroup}>
-          <label className={styles.inputLabel}>Zip Code</label>
+          <label className={styles.inputLabel}>
+            Zip Code{" "}
+            <span className={styles.required}>
+              *{" "}
+              {errors["address.zipCode"] ? (
+                <span className={styles.error}>
+                  {errors["address.zipCode"].message}
+                </span>
+              ) : null}
+            </span>
+          </label>
+
           <input
             className={styles.inputBox}
             type="text"

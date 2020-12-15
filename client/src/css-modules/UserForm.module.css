@@ -78,3 +78,14 @@
     margin-right: 0;
   }
 }
+
+.required {
+  color: red;
+  font-size: 1em;
+  margin-left: 0.2rem;
+}
+
+.error {
+  display: inline-block;
+  font-size: 1em;
+}

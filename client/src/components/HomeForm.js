@@ -150,7 +150,7 @@ export default (props) => {
             <input
               className={styles.radio}
               name="firstTimeOwner"
-              value="yes"
+              value="Yes"
               type="radio"
             />
             Yes
@@ -159,7 +159,7 @@ export default (props) => {
             <input
               className={styles.radio}
               name="firstTimeOwner"
-              value="no"
+              value="No"
               type="radio"
             />
             No
