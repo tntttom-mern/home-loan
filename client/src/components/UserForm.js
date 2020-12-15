@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import { navigate } from "@reach/router";
 import axios from "axios";
 
 import styles from "../css-modules/UserForm.module.css";
@@ -19,20 +19,28 @@ export default (props) => {
   const submitForm = (event) => {
     event.preventDefault();
 
-    axios.post("/localhost:8000/api/register", {
-      firstName,
-      lastName,
-      email,
-      password,
-      phone,
-      dateOfBirth: birthdate,
-      address: {
-        street,
-        city,
-        state,
-        zipcode,
-      },
-    });
+    axios
+      .post("http://localhost:8000/api/register", {
+        firstName,
+        lastName,
+        email,
+        password,
+        phone,
+        dateOfBirth: birthdate,
+        address: {
+          street,
+          city,
+          state,
+          zipCode: zipcode,
+        },
+      })
+      .then((res) => {
+        console.log(res.data.user._id);
+
+        props.submitLoan(`${res.data.user._id}`);
+      })
+
+      .catch((err) => console.log(err));
   };
 
   return (
@@ -70,7 +78,7 @@ export default (props) => {
           <label className={styles.inputLabel}>Password</label>
           <input
             className={styles.inputBox}
-            type="text"
+            type="password"
             onChange={(e) => setPassword(e.target.value)}
           />
         </div>

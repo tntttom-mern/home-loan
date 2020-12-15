@@ -58,3 +58,30 @@ input[type="radio"]:checked:after {
   visibility: visible;
   border: 2px solid white;
 }
+
+/* Desktops and laptops ----------- */
+@media only screen and (max-width: 1024px) {
+  .radioItem {
+    font-size: 1.2em;
+    width: 30%;
+  }
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (max-width: 768px) {
+  .radioItem {
+    font-size: 1em;
+    width: 40%;
+  }
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (max-width: 580px) {
+  .formHeader {
+    font-size: 2.5em;
+  }
+  .radioItem {
+    font-size: 1em;
+    width: 80%;
+  }
+}

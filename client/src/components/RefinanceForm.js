@@ -2,9 +2,8 @@ import React, { useState } from "react";
 
 import styles from "../css-modules/RefinanceForm.module.css";
 
-export default () => {
-  const [propertyUse, setPropertyUse] = useState("");
-  const [homeDescription, setHomeDescription] = useState("");
+export default (props) => {
+  const { setPropertyUse, setHomeDescription } = props;
 
   return (
     <form className={styles.formContainer}>
@@ -12,7 +11,10 @@ export default () => {
 
       <div className={styles.inputGroup}>
         <label className={styles.groupLabel}>Property Use</label>
-        <div className={styles.radioGroup}>
+        <div
+          className={styles.radioGroup}
+          onChange={(e) => setPropertyUse(e.target.value)}
+        >
           <label className={styles.radioItem}>
             <input
               className={styles.radio}
@@ -45,7 +47,10 @@ export default () => {
 
       <div className={styles.inputGroup}>
         <label className={styles.groupLabel}>Home Description</label>
-        <div className={styles.radioGroup}>
+        <div
+          className={styles.radioGroup}
+          onChange={(e) => setHomeDescription(e.target.value)}
+        >
           <label className={styles.radioItem}>
             <input
               className={styles.radio}

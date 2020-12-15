@@ -1,0 +1,57 @@
+.container {
+  width: 50%;
+  margin: 3rem auto;
+  border-bottom: 1px solid gray;
+}
+
+.header {
+  font-size: 3em;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid gray;
+}
+
+.subheader {
+  font-size: 2em;
+  margin-bottom: 2rem;
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.labelGroup {
+  width: 45%;
+  margin-right: 5%;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  font-size: 1.25em;
+  font-weight: bold;
+}
+
+.data {
+  font-size: 1.75em;
+}
+
+@media only screen and (max-width: 768px) {
+  .header {
+    font-size: 2em;
+  }
+
+  .subheader {
+    font-size: 1.5em;
+  }
+}
+
+@media only screen and (max-width: 580px) {
+  .container {
+    width: 75%;
+  }
+  .list {
+    flex-direction: column;
+  }
+}

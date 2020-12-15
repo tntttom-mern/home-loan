@@ -18,10 +18,10 @@ export default () => {
           financing solutions to meet the needs of almost anyone
         </p>
         <div className={styles.buttonContainer}>
-          <Link to="/">
+          <Link to="/home-purchase">
             <button className={styles.btn}>Buy a Home</button>
           </Link>
-          <Link to="/">
+          <Link to="/home-refinance">
             <button className={styles.btn}>Refinance</button>
           </Link>
         </div>

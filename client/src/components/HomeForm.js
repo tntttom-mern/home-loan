@@ -2,11 +2,13 @@ import React, { useState } from "react";
 
 import styles from "../css-modules/HomeForm.module.css";
 
-export default () => {
-  const [propertyUse, setPropertyUse] = useState("");
-  const [homeDescription, setHomeDescription] = useState("");
-  const [timeframe, setTimeframe] = useState("");
-  const [firstTimeOwner, setFirstTimeOwner] = useState("");
+export default (props) => {
+  const {
+    setPropertyUse,
+    setHomeDescription,
+    setTimeframe,
+    setFirstTimeOwner,
+  } = props;
 
   return (
     <form className={styles.formContainer}>
@@ -14,7 +16,10 @@ export default () => {
 
       <div className={styles.inputGroup}>
         <label className={styles.groupLabel}>Property Use</label>
-        <div className={styles.radioGroup}>
+        <div
+          className={styles.radioGroup}
+          onChange={(e) => setPropertyUse(e.target.value)}
+        >
           <label className={styles.radioItem}>
             <input
               className={styles.radio}
@@ -47,7 +52,10 @@ export default () => {
 
       <div className={styles.inputGroup}>
         <label className={styles.groupLabel}>Home Description</label>
-        <div className={styles.radioGroup}>
+        <div
+          className={styles.radioGroup}
+          onChange={(e) => setHomeDescription(e.target.value)}
+        >
           <label className={styles.radioItem}>
             <input
               className={styles.radio}
@@ -89,7 +97,10 @@ export default () => {
 
       <div className={styles.inputGroup}>
         <label className={styles.groupLabel}>Timeframe of Purchase</label>
-        <div className={styles.radioGroup}>
+        <div
+          className={styles.radioGroup}
+          onChange={(e) => setTimeframe(e.target.value)}
+        >
           <label className={styles.radioItem}>
             <input
               className={styles.radio}
@@ -131,7 +142,10 @@ export default () => {
 
       <div className={styles.inputGroup}>
         <label className={styles.groupLabel}>First Time Owner?</label>
-        <div className={styles.radioGroup}>
+        <div
+          className={styles.radioGroup}
+          onChange={(e) => setFirstTimeOwner(e.target.value)}
+        >
           <label className={styles.radioItem}>
             <input
               className={styles.radio}
