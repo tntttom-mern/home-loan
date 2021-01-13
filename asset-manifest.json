@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/home-loan/static/css/main.b2f63287.chunk.css",
+    "main.js": "/home-loan/static/js/main.4d0225a8.chunk.js",
+    "main.js.map": "/home-loan/static/js/main.4d0225a8.chunk.js.map",
+    "runtime-main.js": "/home-loan/static/js/runtime-main.edd7f160.js",
+    "runtime-main.js.map": "/home-loan/static/js/runtime-main.edd7f160.js.map",
+    "static/js/2.d9b48549.chunk.js": "/home-loan/static/js/2.d9b48549.chunk.js",
+    "static/js/2.d9b48549.chunk.js.map": "/home-loan/static/js/2.d9b48549.chunk.js.map",
+    "static/js/3.eb13adfe.chunk.js": "/home-loan/static/js/3.eb13adfe.chunk.js",
+    "static/js/3.eb13adfe.chunk.js.map": "/home-loan/static/js/3.eb13adfe.chunk.js.map",
+    "index.html": "/home-loan/index.html",
+    "static/css/main.b2f63287.chunk.css.map": "/home-loan/static/css/main.b2f63287.chunk.css.map",
+    "static/js/2.d9b48549.chunk.js.LICENSE.txt": "/home-loan/static/js/2.d9b48549.chunk.js.LICENSE.txt",
+    "static/media/EquityBanner.module.css": "/home-loan/static/media/EQYUTI_BANNER.7e571728.png",
+    "static/media/Landing.module.css": "/home-loan/static/media/HomeBanner1.1bb35340.png",
+    "static/media/HomeBanner.module.css": "/home-loan/static/media/banne2.d470a0c7.jpg",
+    "static/media/RefinanceBanner.module.css": "/home-loan/static/media/banne3.01e22c29.jpg",
+    "static/media/lenderLogo.b87d0c59.png": "/home-loan/static/media/lenderLogo.b87d0c59.png",
+    "static/media/phmc_logo.82c2cf4c.png": "/home-loan/static/media/phmc_logo.82c2cf4c.png",
+    "static/media/smallImage1.ae0dd94e.png": "/home-loan/static/media/smallImage1.ae0dd94e.png",
+    "static/media/smallImage2.8caff338.png": "/home-loan/static/media/smallImage2.8caff338.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.edd7f160.js",
+    "static/js/2.d9b48549.chunk.js",
+    "static/css/main.b2f63287.chunk.css",
+    "static/js/main.4d0225a8.chunk.js"
+  ]
+}
